@@ -17,7 +17,7 @@ is the only honest way I know to find out whether a pattern generalizes.
 
 | | |
 |---|---|
-| **[URGE](https://github.com/toneron2/URGE)** | A deterministic policy engine in Rust. Evaluates a decision across eight kinds of formal logic, cross-validates the results, and produces a full audit trace. Runs without an operating system. **[Live demo](https://toneron2.github.io/URGE/demo/)** |
+| **[URGE](https://github.com/toneron2/URGE)** | A deterministic policy engine in Rust. Evaluates a decision across seven kinds of formal logic, cross-validates the results, and produces a full audit trace. Runs without an operating system. **[Live demo](https://toneron2.github.io/URGE/demo/)** |
 | **[RWS](https://github.com/toneron2/RWS)** | Six specialist agents performing real ASHRAE calculations to design and estimate custom air handling units. Built to test whether the pattern survives contact with a regulated engineering discipline. |
 | **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Designing and manufacturing fractal acoustic horns end to end, from geometry to toolpaths. |
 | **[agentic-platform](https://github.com/toneron2/agentic-platform)** | Project scaffolding for long-running work: idea capture, dependency-aware task tracking, and an agent that maintains both. |
