@@ -1,32 +1,59 @@
 ## Tony Slosar
 
-I build governance and observability layers for AI agent systems, then test whether the
-architecture holds by applying it to unrelated industries.
+I build governance layers for AI agent systems. Most of what follows is one architecture
+tested in different places, and it is now converging on a single product.
 
 **TODOMODO.IO AGENCY LLC** &nbsp;·&nbsp; [slosars.me](https://slosars.me)
 
-### The problem I work on
+### The problem
 
-Multi-agent systems are difficult to trust for two practical reasons: you cannot inspect why
-a decision was made, and you cannot see what the agents are doing while they do it. Most of
-my work addresses one or the other. The projects below apply the same governance pattern to
-healthcare workflow, HVAC equipment design, acoustic engineering and vehicle autonomy, which
-is the only honest way I know to find out whether a pattern generalizes.
+An AI agent can act. It usually cannot prove why the action was permitted. That gap is
+tolerable in ordinary software and unacceptable in healthcare, where "who accessed this
+record, under what authority, and show me the reasoning" is a question with a legal answer.
+Probabilistic systems answer it with a confidence score. That is not an answer.
 
-### Start here
+### The system
+
+**[URGE](https://github.com/toneron2/URGE) is the reasoning core.** A deterministic policy
+engine in Rust that evaluates a decision across seven kinds of formal logic, cross-validates
+the results, and returns a full audit trace. The same input gives the same verdict every
+time. **[Try it](https://toneron2.github.io/URGE/demo/)** — it runs in the browser.
+
+**[BROAD](https://github.com/toneron2/broad) is the platform it governs.** Business Resource
+Observability and Automation Deployment: a healthcare agentic ERP built on FHIR R4 and
+clinical pathway standards, where every agent action passes a formal access check before it
+executes and every decision is logged with its reasoning.
+
+**[The Physicalized Agent](https://github.com/toneron2/physicalized-agent) is the first
+device.** A low-cost sensor head — stereo cameras, binaural MEMS microphones in tuned
+acoustic horns, one ESP32-P4 — that computes *vectors* rather than guesses. Deterministic
+signal processing instead of black-box inference is what makes it cheap, and cheap is the
+point: the goal is a device you give to the patient, not one you sell to the building. It
+runs a local governance state machine for safety overrides and streams logical telemetry to
+the cloud over **WebTransport on HTTP/3** — Chromium's QUIC, bidirectional, with the
+governance heartbeat holding priority on stream 0 and video yielding to it. Connected, the
+head works as the patient's advocate rather than the building's camera.
+
+The same pattern gets tested against unrelated disciplines on purpose, because that is the
+only honest way to find out whether it generalizes.
+
+### The repositories
 
 | | |
 |---|---|
-| **[URGE](https://github.com/toneron2/URGE)** | A deterministic policy engine in Rust. Evaluates a decision across seven kinds of formal logic, cross-validates the results, and produces a full audit trace. Runs without an operating system. **[Live demo](https://toneron2.github.io/URGE/demo/)** |
-| **[RWS](https://github.com/toneron2/RWS)** | Six specialist agents performing real ASHRAE calculations to design and estimate custom air handling units. Built to test whether the pattern survives contact with a regulated engineering discipline. |
-| **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Designing and manufacturing fractal acoustic horns end to end, from geometry to toolpaths. |
-| **[agentic-platform](https://github.com/toneron2/agentic-platform)** | Project scaffolding for long-running work: idea capture, dependency-aware task tracking, and an agent that maintains both. |
-| **[agent-world](https://github.com/toneron2/agent-world)** | A failed experiment, kept public. Agent activity rendered as a game world. The README explains why that was the wrong answer, which turned out to be the useful part. |
+| **[URGE](https://github.com/toneron2/URGE)** | The governance engine. Rust, seven logic paradigms, cross-paradigm validation, runs without an operating system. [Live demo](https://toneron2.github.io/URGE/demo/) |
+| **[broad](https://github.com/toneron2/broad)** | The healthcare platform: workflow library, clinical pathways, and the access layer that fronts them. Specification and partial implementation. |
+| **[physicalized-agent](https://github.com/toneron2/physicalized-agent)** | The design system for the sensor head — six Claude skills, three MCP servers, three schemas. Hardware referenced, not vendored. |
+| **[RWS](https://github.com/toneron2/RWS)** | Six agents doing real ASHRAE calculations to design and estimate air handling units. The pattern against a regulated engineering discipline. |
+| **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Fractal acoustic horns, geometry through toolpaths. The pattern against manufacturing. |
+| **[agentic-platform](https://github.com/toneron2/agentic-platform)** | Project scaffolding for long-running work: idea capture, dependency-aware tasks, an agent that maintains both. |
+| **[agent-world](https://github.com/toneron2/agent-world)** | A failed experiment, kept public. Agent activity rendered as a game world. The README explains why that was the wrong answer. |
 
 ### How to read this account
 
-These are working implementations and research prototypes, not commercial products. Where
-something does not work, the repository says so. I would rather publish an accurate account
-of a dead end than a polished description of a project nobody can run.
+These are working implementations, specifications and research prototypes, not commercial
+products. The sensor head is specified and not yet built. Where something does not work, the
+repository says so. I would rather publish an accurate account of a dead end than a polished
+description of a project nobody can run.
 
 Written with heavy use of AI tooling, which is also the subject.
