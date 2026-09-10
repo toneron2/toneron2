@@ -14,16 +14,6 @@ Probabilistic systems answer it with a confidence score. That is not an answer.
 
 ### The system
 
-**[URGE](https://github.com/toneron2/URGE) is the reasoning core.** A deterministic policy
-engine in Rust that evaluates a decision across seven kinds of formal logic, cross-validates
-the results, and returns a full audit trace. The same input gives the same verdict every
-time. **[Try it](https://toneron2.github.io/URGE/demo/)** — it runs in the browser.
-
-**[BROAD](https://github.com/toneron2/broad) is the platform it governs.** Business Resource
-Observability and Automation Deployment: a healthcare agentic ERP built on FHIR R4 and
-clinical pathway standards, where every agent action passes a formal access check before it
-executes and every decision is logged with its reasoning.
-
 **[The Physicalized Agent](https://github.com/toneron2/physicalized-agent) is the first
 device.** A low-cost sensor head — stereo cameras, binaural MEMS microphones in tuned
 acoustic horns, one ESP32-P4 — that computes *vectors* rather than guesses. Deterministic
@@ -33,6 +23,16 @@ runs a local governance state machine for safety overrides and streams logical t
 the cloud over **WebTransport on HTTP/3** — Chromium's QUIC, bidirectional, with the
 governance heartbeat holding priority on stream 0 and video yielding to it. Connected, the
 head works as the patient's advocate rather than the building's camera.
+
+**[URGE](https://github.com/toneron2/URGE) is the reasoning core.** A deterministic policy
+engine in Rust that evaluates a decision across seven kinds of formal logic, cross-validates
+the results, and returns a full audit trace. The same input gives the same verdict every
+time. **[Try it](https://toneron2.github.io/URGE/demo/)** — it runs in the browser.
+
+**[BROAD](https://github.com/toneron2/broad) is the platform it governs.** Business Resource
+Observability and Automation Deployment: a healthcare agentic ERP built on FHIR R4 and
+clinical pathway standards, where every agent action passes a formal access check before it
+executes and every decision is logged with its reasoning.
 
 The same pattern gets tested against unrelated disciplines on purpose, because that is the
 only honest way to find out whether it generalizes.
