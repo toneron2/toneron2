@@ -41,13 +41,13 @@ only honest way to find out whether it generalizes.
 
 | | | |
 |---|---|---|
-|  | **[URGE](https://github.com/toneron2/URGE)** | The governance engine. Rust, seven logic paradigms, cross-paradigm validation, runs without an operating system. [Live demo](https://toneron2.github.io/URGE/demo/) |
-|  | **[broad](https://github.com/toneron2/broad)** | The healthcare platform: workflow library, clinical pathways, and the access layer that fronts them. Specification and partial implementation. |
-| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/physicalized-agent.png" width="72" alt="physicalized-agent"> | **[physicalized‑agent](https://github.com/toneron2/physicalized-agent)** | The design system for the sensor head — six Claude skills, three MCP servers, three schemas. Hardware referenced, not vendored. |
-|  | **[RWS](https://github.com/toneron2/RWS)** | Six agents doing real ASHRAE calculations to design and estimate air handling units. The pattern against a regulated engineering discipline. |
+| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/physicalized-agent.png" width="72" alt="physicalized‑agent"> | **[physicalized‑agent](https://github.com/toneron2/physicalized-agent)** | The design system for the sensor head — six Claude skills, three MCP servers, three schemas. Hardware referenced, not vendored. |
+| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/urge.png" width="72" alt="URGE"> | **[URGE](https://github.com/toneron2/URGE)** | The governance engine. Rust, seven logic paradigms, cross-paradigm validation, runs without an operating system. [Live demo](https://toneron2.github.io/URGE/demo/) |
+| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/broad.png" width="72" alt="broad"> | **[broad](https://github.com/toneron2/broad)** | The healthcare platform: workflow library, clinical pathways, and the access layer that fronts them. Specification and partial implementation. |
 | <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/sfh-os.png" width="72" alt="SFH-OS"> | **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Fractal acoustic horns, geometry through toolpaths. The pattern against manufacturing. |
-|  | **[agentic-platform](https://github.com/toneron2/agentic-platform)** | Project scaffolding for long-running work: idea capture, dependency-aware tasks, an agent that maintains both. |
+| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/rws.png" width="72" alt="RWS"> | **[RWS](https://github.com/toneron2/RWS)** | Six agents doing real ASHRAE calculations to design and estimate air handling units. The pattern against a regulated engineering discipline. |
 | <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/agent-world.png" width="72" alt="agent-world"> | **[agent-world](https://github.com/toneron2/agent-world)** | A failed experiment, kept public. Agent activity rendered as a game world. The README explains why that was the wrong answer. |
+|  | **[agentic-platform](https://github.com/toneron2/agentic-platform)** | Project scaffolding for long-running work: idea capture, dependency-aware tasks, an agent that maintains both. |
 
 ### How to read this account
 
