@@ -1,6 +1,6 @@
 ## Tony Slosar
 
-I build governance layers for AI agent systems. Most of what follows is one architecture
+Most of what follows is one architecture
 tested in different places, and it is now converging on a single product line, **TODOMODO**:
 devices at the edge, one portal, and services behind it. The rest are standalone projects
 that share the account and, where the table says so, the pattern.
