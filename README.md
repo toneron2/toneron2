@@ -37,7 +37,7 @@ One architecture converging on one product line: devices at the edge, one portal
 
 | | Repository | What it is | Status |
 |---|---|---|---|
-| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/sfh-os.png" width="80" alt="SFH-OS"> | **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Fractal acoustic horns, from geometry through acoustic simulation to L-PBF build preparation. | Geometry, acoustic simulation and build preparation are implemented; no horn has been machined. |
+| <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/sfh-os.png" width="80" alt="SFH-OS"> | **[SFH-OS](https://github.com/toneron2/SFH-OS)** | Fractal acoustic horns, from geometry through acoustic simulation to L-PBF build preparation. | Geometry and acoustic simulation are implemented; fabrication and visualization are interface stubs, and no horn has been machined. |
 | <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/rws.png" width="80" alt="RWS"> | **[RWS](https://github.com/toneron2/RWS)** | Air-handling-unit design and estimation by seven agents over ASHRAE calculators. | Specification, four MCP servers and a scripted demonstration, December 2025. |
 | <img src="https://raw.githubusercontent.com/toneron2/toneron2/main/icons/hum2hendrix.png" width="80" alt="hum2hendrix"> | **[hum2hendrix](https://github.com/toneron2/hum2hendrix)** | Hummed melodies to MIDI, quantized to a scale and a grid, for rendering as guitar. | Audio to MIDI, quantization and piano-roll views run, with 68 tests; rendering is not built. |
 
