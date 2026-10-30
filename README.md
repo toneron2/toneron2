@@ -1,6 +1,6 @@
 ## Tony Slosar
 
-**TODOMODO.IO AGENCY LLC** &nbsp;·&nbsp; [slosars.me](https://slosars.me) &nbsp;·&nbsp; [t.me/toneron2](https://t.me/toneron2)
+**TODOMODO.IO AGENCY LLC** &nbsp; &nbsp;·&nbsp; [t.me/toneron2](https://t.me/toneron2)
 
 **An AI agent can act. It usually cannot show why the action was permitted.** In healthcare that
 question has a legal answer, and a confidence score is not one.
